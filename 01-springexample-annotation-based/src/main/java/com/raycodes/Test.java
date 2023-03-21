@@ -17,6 +17,10 @@ public class Test {
 		System.out.println(context.getBean("accountDetails"));
 		System.out.println(context.getBean("employee"));
 		System.out.println(context.getBean("employee"));
+		
+		Employee emp1 = (Employee) context.getBean("employee");
+		Employee emp2 = (Employee) context.getBean("employee");
+		System.out.println(emp1==emp2);
 	}
 
 }
